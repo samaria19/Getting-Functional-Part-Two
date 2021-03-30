@@ -23,10 +23,15 @@ then?
 
 
 */
-
-
 function oldestCustomer(array){
-
+  var age = 0
+  var name;
+for(var i=0; i<array.length;i++){
+  if(array[i].age > age){
+    age = array[i].age
+    name = array[i].name
+  }
+}
 
 };
 
@@ -50,6 +55,17 @@ then?
 */
 
 function youngestCustomer(array){
+  var age = 0
+  var name;
+for(var i=0; i<array.length;i++){
+  if(array[i].age < age){
+    age = array[i].age
+    name = array[i].name
+  }
+}
 
 };
+
+
+
 
