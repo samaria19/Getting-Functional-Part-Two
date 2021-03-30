@@ -1,7 +1,6 @@
 //DO NOT CHANGE CODE HERE
 var customers = require('./customers.json');
 //DO NOT CHANGE CODE HERE
-console.log(customers)
 
 
 
@@ -32,7 +31,7 @@ for(var i=0; i<array.length;i++){
     name = array[i].name
   }
 }
-
+return name;
 };
 
 
@@ -55,7 +54,7 @@ then?
 */
 
 function youngestCustomer(array){
-  var age = 0
+  var age = 50
   var name;
 for(var i=0; i<array.length;i++){
   if(array[i].age < age){
@@ -63,9 +62,9 @@ for(var i=0; i<array.length;i++){
     name = array[i].name
   }
 }
-
+return name;
 };
-
+console.log(youngestCustomer(customers))
 
 
 
